@@ -1,38 +1,76 @@
-.App {
+.topNav {
+  background: yellowgreen;
+}
+.hero {
+  background: linear-gradient(90deg, #e7db76 0.25%, #5dcb36 100%);
+  min-height: 60vh;
+}
+
+.hero img {
+  max-width: 400px;
+}
+
+/* title */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
+  margin-top: 4rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 4rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title span {
+  border-bottom: 5px solid yellowgreen;
+  padding: 0.5rem 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* icons */
+.icons {
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icons div {
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icons i {
+  font-size: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+i.fa-figma {
+  background: linear-gradient(
+    180deg,
+    #ee1414 0%,
+    #d012d3 38.02%,
+    #120eb6 66.15%,
+    #14b70e 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Project section */
+.projects {
+  background: rgba(231, 213, 118, 0.41);
+}
+
+.contact {
+  background: rgba(153, 205, 50, 0.548);
+}
+
+#goup {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  font-size: 3rem;
 }
