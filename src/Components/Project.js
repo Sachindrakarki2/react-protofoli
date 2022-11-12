@@ -1,5 +1,5 @@
 import React from "react";
-import sachindra from "../image/sachindra.png"
+import sachindra from "../image/sachindra.png";
 export const Project = () => {
   return (
     <div id="projects" className="projects py-3">
