@@ -4,22 +4,31 @@ import logo from "../image/1.png";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
+import { Link } from "react-router-dom";
 export const TopNav = () => {
   return (
-    <Navbar id="navbar" expand="lg" className="topNav" collapsOnSelect>
+    <Navbar expand="md" id="navbar" className="topNav" collapseOnSelect>
       <Container>
-        <Navbar.Brand href="#home">
+        <Link to="/">
           <img src={logo} alt="logo" width="60px" />
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#skills">skill</Nav.Link>
-            <Nav.Link href="#projects">Project</Nav.Link>
-            <Nav.Link href="#about">About Me</Nav.Link>
-            <Nav.Link href="#contact">Contact me</Nav.Link>
+            <Link className="nav-link" to="/skills">
+              Skills
+            </Link>
+            <Link className="nav-link" to="/projects">
+              Projects
+            </Link>
+            <Link className="nav-link" to="/about-me">
+              About Me
+            </Link>
+            <Link className="nav-link" to="/contact">
+              {" "}
+              Contact
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
