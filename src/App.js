@@ -6,33 +6,19 @@ import { Hiro } from "./Components/Hiro";
 import { Project } from "./Components/Project";
 import { Skill } from "./Components/Skill";
 import { TopNav } from "./Components/TopNav";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <LayOut>
-      <div className="wrapper">
-        {/* <!-- navbar --> */}
-        <TopNav />
-
-        {/* <!-- hero section --> */}
-        <Hiro />
-
-        {/* <!-- skills --> */}
-
-        <Skill />
-
-        {/* <!-- projects --> */}
-        <Project />
-
-        {/* <!-- about me --> */}
-        <AboutMe />
-
-        {/* <!-- contact me --> */}
-        <Contact />
-
-        {/* <!-- footer --> */}
-      </div>
-    </LayOut>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Hiro />}></Route>
+        <Route path="/skills" element={<Skill />}></Route>
+        <Route path="/projects" element={<Project />}></Route>
+        <Route path="/about-me" element={<AboutMe />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

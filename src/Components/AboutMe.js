@@ -1,8 +1,10 @@
-import React from 'react'
-import sach from "../image/sac.png"
+import React from "react";
+import sach from "../image/sac.png";
+import { LayOut } from "./LayOut";
 export const AboutMe = () => {
   return (
-    <section id="about" className="container">
+    <LayOut>
+      <section id="about" className="container">
         <div className="title">
           <span>About Me</span>
         </div>
@@ -26,5 +28,6 @@ export const AboutMe = () => {
           </div>
         </div>
       </section>
-  )
-}
+    </LayOut>
+  );
+};
