@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../image/1.png";
-
+import logo from "../image/sachindralogo.png";
+import { motion } from "framer-motion";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -11,7 +11,14 @@ export const TopNav = () => {
     <Navbar expand="md" id="navbar" className="topNav" collapseOnSelect>
       <Container>
         <Link to="/">
-          <img src={logo} alt="logo" width="60px" />
+          <motion.img
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="img"
+            src={logo}
+            alt="logo"
+            width="60px"
+          />
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

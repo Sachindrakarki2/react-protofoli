@@ -4,12 +4,8 @@ export const Fotter = () => {
   return (
     <div>
       <footer className="bg-dark text-light p-5 text-center mt-5">
-        Copyright &copy; All right Reserved. Made with 💓 by me 🤷‍♀️
+        Copyright &copy; All right Reserved. Made by me
       </footer>
-
-      <a href="#navbar" id="goup">
-        <i className="fa-solid fa-circle-up"></i>
-      </a>
     </div>
   );
 };
