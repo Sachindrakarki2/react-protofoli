@@ -8,7 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 export const TopNav = () => {
   return (
-    <Navbar expand="md" id="navbar" className="topNav" collapseOnSelect>
+    <Navbar expand="md" id="navbar" className="topNav " collapseOnSelect>
       <Container>
         <Link to="/">
           <motion.img
@@ -22,17 +22,17 @@ export const TopNav = () => {
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Link className="nav-link" to="/skills">
+          <Nav className="ms-auto ">
+            <Link className="nav-link text-light" to="/skills">
               Skills
             </Link>
-            <Link className="nav-link" to="/projects">
+            <Link className="nav-link text-light" to="/projects">
               Projects
             </Link>
-            <Link className="nav-link" to="/about-me">
+            <Link className="nav-link text-light" to="/about-me">
               About Me
             </Link>
-            <Link className="nav-link" to="/contact">
+            <Link className="nav-link text-light" to="/contact">
               {" "}
               Contact
             </Link>

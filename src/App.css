@@ -1,9 +1,9 @@
 .topNav {
-  background: yellowgreen;
+  background: linear-gradient(#000000, #434343);
 }
 
 .hero {
-  background: linear-gradient(90deg, #e7db76 0.25%, #5dcb36 100%);
+  background: linear-gradient(90deg, #de6161 0.25%, #2657eb 100%);
   min-height: 70vh;
 }
 
@@ -13,7 +13,7 @@
 
 .cont {
   background: rgb(14, 33, 212);
-  width: 200px;
+  width: 330px;
   color: rgb(255, 255, 255);
 }
 .img {
@@ -91,14 +91,13 @@ i.fa-figma {
   font-size: 3rem;
 }
 .main-layout {
-  min-height: 75vh;
+  min-height: 73vh;
 }
 .containe {
   background: rgb(79, 85, 119);
-  padding-top: 10px;
+  padding-top: 5px;
 }
 #root {
-  
   background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab, yellow);
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
