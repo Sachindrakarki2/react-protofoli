@@ -8,7 +8,7 @@ export const Hiro = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Front-end Developer"];
+  const toRotate = ["Front-end Developer || Software engineer "];
   const period = 2000;
 
   useEffect(() => {
@@ -54,14 +54,11 @@ export const Hiro = () => {
         <div className="container">
           <div className="row py-5">
             <div className="col-md-5 text-center order-md-2">
-              <img src={Sachindra} alt="my image" width="90%" />
+              <motion.img src={Sachindra} alt="my image" width="90%" />
             </div>
 
-        
-         
-            
-            <div className="col-md-7 mt-5 pt-5">
-            <div className="cont">Welcome to my Protfolio</div>
+            <div className="col-md-7 fs-3 mt-5 pt-5">
+              <div className="cont">Welcome to my Protfolio</div>
               hi 👋 i'm
               <span className="fw-bold"> Sachindra Karki</span>
               <div className="mt-2 mb-5 fs-3 fw-bold">{text}</div>
@@ -73,7 +70,7 @@ export const Hiro = () => {
                 Databased asd asdsad sachindralogosad s a
               </motion.p>
               <motion.button
-                animate={{ rotate: 360 }}
+                animate={{ rotate: 360, duration: 5 }}
                 className="btn btn-danger"
               >
                 Download Resume <i className="fa-solid fa-download"></i>

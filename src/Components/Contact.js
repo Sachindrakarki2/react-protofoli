@@ -19,7 +19,7 @@ export const Contact = () => {
               whileTap={{ scale: 0.9 }}
               href="mailto:sachindrakarki2@gmail.com"
             >
-              <i className="fa-solid fa-envelope "></i>
+              <i className="fa-solid fa-envelope text-light"></i>
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.1 }}
@@ -27,7 +27,7 @@ export const Contact = () => {
               href="https://www.linkedin.com/in/sachindra-karki-626074250/"
               target="_blank"
             >
-              <i className="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin text-success"></i>
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.1 }}
@@ -35,7 +35,7 @@ export const Contact = () => {
               href="https://www.facebook.com/sachin.karki.52/"
               target="_blank"
             >
-              <i className="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-facebook text-primary"></i>
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.1 }}
@@ -51,7 +51,7 @@ export const Contact = () => {
               href="tel:0416461327"
               target="_blank"
             >
-              <i class="fa-solid fa-mobile"></i>
+              <i class="fa-solid fa-mobile text-black"></i>
             </motion.a>
           </div>
         </div>
