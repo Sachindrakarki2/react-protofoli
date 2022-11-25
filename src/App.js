@@ -10,7 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter variant="danger">
       <Routes>
         <Route path="/" element={<Hiro />}></Route>
         <Route path="/skills" element={<Skill />}></Route>

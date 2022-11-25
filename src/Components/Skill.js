@@ -32,7 +32,7 @@ export const Skill = () => {
                 <i className="fa-brands fa-figma"></i>Figma
               </div>
               <div>
-                <i class="fa-brands fa-node"></i>Node.js
+                <i class="fa-brands fa-node text-success"></i>Node.js
               </div>
             </div>
           </div>

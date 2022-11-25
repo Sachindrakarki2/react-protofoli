@@ -1,15 +1,27 @@
 .topNav {
   background: yellowgreen;
 }
+
 .hero {
   background: linear-gradient(90deg, #e7db76 0.25%, #5dcb36 100%);
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .hero img {
   max-width: 400px;
 }
 
+.cont {
+  background: rgb(14, 33, 212);
+  width: 200px;
+  color: rgb(255, 255, 255);
+}
+.img {
+  border-radius: 40%;
+}
+.nav-link:hover {
+  font-size: 2rem;
+}
 /* title */
 .title {
   font-size: 2rem;
@@ -36,6 +48,7 @@
 
 .icons div {
   margin-bottom: 2rem;
+  margin-right: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,11 +74,14 @@ i.fa-figma {
 
 /* Project section */
 .projects {
-  background: rgba(231, 213, 118, 0.41);
+  background: rgba(57, 221, 28, 0.41);
 }
-
+.gitlogo:hover {
+  font-size: 3rem;
+}
 .contact {
   background: rgba(153, 205, 50, 0.548);
+  margin-top: 15rem;
 }
 
 #goup {
@@ -73,4 +89,29 @@ i.fa-figma {
   bottom: 30px;
   right: 20px;
   font-size: 3rem;
+}
+.main-layout {
+  min-height: 75vh;
+}
+.containe {
+  background: rgb(79, 85, 119);
+  padding-top: 10px;
+}
+#root {
+  
+  background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab, yellow);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
